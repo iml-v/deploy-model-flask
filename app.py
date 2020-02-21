@@ -49,9 +49,9 @@ def results():
         results = predict(to_predict_list)
 
         if int(results) == 1:
-            prediction = 'Income more than 50K'
+            prediction = 'Results is 1'
         else:
-            prediction = 'Income less that 50K'
+            prediction = 'Results is 0'
 
         return render_template("results.html", prediction=prediction)
 

@@ -15,10 +15,6 @@ app = Flask(__name__)
 
 @app.route('/')
 
-@app.route('/apitest')
-def apitest():
-    return 'API Working'
-
 @app.route('/index')
 def index():
     return flask.render_template('index.html')
